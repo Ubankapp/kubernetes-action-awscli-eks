@@ -12,4 +12,5 @@ RUN chmod +x /usr/bin/kubectl
 RUN aws --version
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
